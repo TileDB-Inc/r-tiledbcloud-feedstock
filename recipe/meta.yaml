@@ -1,0 +1,62 @@
+{% set name = "r-tiledbcloud" %}
+{% set version = "0.0.1" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/TileDB-Inc/TileDB-R-Cloud/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 75c1b6bdd2abdb4227b5e50ea23677539edd65e4f7f40fc6d96946cebdd2f5c9
+
+build:
+  number: 0
+  skip: true  # [win]
+  rpaths:
+    - lib/R/lib/
+    - lib/
+  ignore_run_exports: # ignore here to avoid overlink warning b/c test require doesn't work
+    - r-testthat
+
+requirements:
+  build:
+    - pkg-config
+    - make
+    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-sys                      # [build_platform != target_platform]
+  host:
+    - r-base
+    - r-testthat
+    - r-tinytest
+    - r-jsonlite
+    - r-arrow
+    - r-httr
+    - r-R6
+    - r-base64enc
+  run:
+    - r-base
+    - r-arrow
+
+test:
+  requires:
+    - r-tinytest
+  commands:
+    - Rscript -e 'tinytest::test_package("tiledbcloud")'
+
+about:
+  home: https://www.tiledb.com
+  license: MIT
+  license_file: LICENSE
+  summary: TileDB-Cloud-R contains the R client for the TileDB Cloud Service.
+
+  description: |
+    TileDB-Cloud-R contains the R client for the TileDB Cloud Service.
+  doc_url: https://docs.tiledb.com/developer/
+  dev_url: https://github.com/TileDB-Inc/TileDB-Cloud-R
+
+extra:
+  recipe-maintainers:
+    - johnkerl
+    - eddelbuettel
+    - ihnorton
+    - Shelnutt2
