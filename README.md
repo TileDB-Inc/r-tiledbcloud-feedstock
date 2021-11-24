@@ -7,34 +7,27 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tiledbcloud-feedstock/blob/master/LICENSE.txt)
 
-Summary: TileDB-Cloud-R contains the R client for the TileDB Cloud Service
+Summary: TileDB-Cloud-R contains the R client for the TileDB Cloud Service.
 
-Development: https://github.com/TileDB-Inc/TileDB-R-Cloud
+Development: https://github.com/TileDB-Inc/TileDB-Cloud-R
 
 Documentation: https://docs.tiledb.com/developer/
 
-TileDB is a highly-parallelized, cloud native array storage engine.
+TileDB-Cloud-R contains the R client for the TileDB Cloud Service.
 
 
 Current build status
 ====================
 
 
-<table><tr>
-    <td>Drone</td>
-    <td>
-      <a href="https://cloud.drone.io/conda-forge/r-tiledbcloud-feedstock">
-        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/r-tiledbcloud-feedstock/master.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
             <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master">
           </a>
         </summary>
@@ -43,57 +36,29 @@ Current build status
           <tbody><tr>
               <td>linux_64_r_base4.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_r_base4.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_r_base4.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_r_base4.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_r_base4.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_r_base4.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8975&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-tiledbcloud-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr>
@@ -111,8 +76,8 @@ Current release info
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-r--tiledbcloud-green.svg)](https://anaconda.org/conda-forge/r-tiledbcloud) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-tiledbcloud.svg)](https://anaconda.org/conda-forge/r-tiledbcloud) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-tiledbcloud.svg)](https://anaconda.org/conda-forge/r-tiledbcloud) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-tiledbcloud.svg)](https://anaconda.org/conda-forge/r-tiledbcloud) |
 
-Installing r-tiledb
-===================
+Installing r-tiledbcloud
+========================
 
 Installing `r-tiledbcloud` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
@@ -124,7 +89,7 @@ conda config --set channel_priority strict
 Once the `conda-forge` channel has been enabled, `r-tiledbcloud` can be installed with:
 
 ```
-conda install r-tiledb
+conda install r-tiledbcloud
 ```
 
 It is possible to list all of the versions of `r-tiledbcloud` available on your platform with:
@@ -137,7 +102,8 @@ conda search r-tiledbcloud --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -173,7 +139,7 @@ Terminology
 
 
 Updating r-tiledbcloud-feedstock
-===========================
+================================
 
 If you would like to improve the r-tiledbcloud recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
@@ -197,8 +163,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@johnkerl](https://github.com/johnkerl/)
+* [@Shelnutt2](https://github.com/Shelnutt2/)
 * [@eddelbuettel](https://github.com/eddelbuettel/)
 * [@ihnorton](https://github.com/ihnorton/)
-* [@Shelnutt2](https://github.com/Shelnutt2/)
+* [@johnkerl](https://github.com/johnkerl/)
 
